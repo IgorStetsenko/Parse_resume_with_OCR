@@ -6,7 +6,6 @@ import fitz  # import pac. and lib.
 import pytesseract
 import matplotlib.pyplot as plt
 import os
-import re
 import sys
 
 from pdf2image import convert_from_path, convert_from_bytes
