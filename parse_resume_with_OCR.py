@@ -52,7 +52,10 @@ def conver_text_image(list_image):
 
 
 def find_target_page(conver_text_image):
-    '''g'''
+    '''Функция принимает на вход список конвертированных страниц и
+	производит для каждой распознавание текста и поиск необходимой информации.
+	input:список конвертированных страниц
+    	output: список данных из резюме'''
     data_of_pdf = []
     for x in conver_text_image:
         page_text = pytesseract.image_to_string(x, lang='rus').split('\n')
